@@ -2,7 +2,10 @@ import tkinter as tk
 import threading
 import time
 import numpy as np
-from PIL import Image, ImageTk
+try:
+    from PIL import Image, ImageTk
+except (ImportError, ModuleNotFoundError):
+    Image = ImageTk = None
 
 from .cameras import Camera
 
