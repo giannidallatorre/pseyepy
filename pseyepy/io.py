@@ -5,8 +5,6 @@ import subprocess as sp
 import numpy as np
 import time
 import os
-import queue
-import h5py
 try:
     import cv2
 except ImportError:
